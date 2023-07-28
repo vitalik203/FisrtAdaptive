@@ -1,0 +1,532 @@
+/*Обнулення*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	max-width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	
+}
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	z-index: 2;
+}
+
+.container {
+
+}
+
+[class*="__container"]{
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 36px;
+} 
+
+@media (min-width:1460px) {
+	[class*="__container"]{
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 0 36px;
+	} 
+}
+
+
+@media (max-width: 1440px) {
+	[class*="__container"]{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 36px;
+	}
+}
+
+
+@media (max-width: 1235px) {
+	[class*="__container"]{
+		max-width: 970px;
+		margin: 0 auto;
+		padding: 0 36px;
+	}
+}	
+
+@media (max-width: 990px) {
+	[class*="__container"]{
+		max-width: 750px;
+		margin: 0 auto;
+		padding: 0 36px;
+	} 
+}
+
+@media (max-width: 780px) {
+	[class*="__container"]{
+		max-width: none;
+		margin: 0 auto;
+		padding: 0 36px;
+	} 
+}
+
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-height: 60px;
+}
+
+@media (max-width: 790px) {
+	.header__container {
+		flex-direction: row;
+	}
+	.header__logo {
+		padding: 20px 0px;
+	}
+	.item__book {
+		margin: 0px 20px;
+	}
+	.header {
+		max-height: 120px;
+	}
+	.header__menu {
+		padding-bottom: 15px;
+	}
+}
+
+.header__logo {
+	padding: 20px 0px;
+	padding-right: 36px;
+	position: relative;
+	z-index: 2;
+}
+
+.header__menu {
+	/* padding: 70px 0px 0px 0px; */
+}
+
+.menu__list {
+	padding-top: 7px;
+	display: flex;
+	flex-direction: row;
+	margin: auto 0;
+	position: relative;
+	z-index: 2;
+}
+.menu__item {
+}
+.menu__link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.5px;
+	color: #081158;
+}
+
+
+
+#menu-margin {
+	font-family: 'Red Hat Display', sans-serif;
+	margin-right: 40px;
+}
+
+.menu__merge {
+	display: flex;
+	flex-direction: row;
+	margin: auto 20px;
+}
+
+#menu-book {
+	background-image: url(../img/book.png);
+	width: 173px;
+	height: 46px;
+}
+
+.menu-book_link {
+	display: block;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 12px 20px 11px 40px;
+}
+
+.item {
+}
+.item__book {
+}
+.item__bag {
+
+}
+
+#item__bag {
+	margin: auto 0px;
+	margin-left: 25px;
+	margin-right: 49px;
+}
+
+.main {
+	flex: 1 1 auto;
+	background: #EEF0F4;
+}
+
+.main__container {
+
+}
+
+.main__start {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: row;
+}
+.start {
+}
+.start__title {
+	font-family: 'Permanent Marker';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 70px;
+	letter-spacing: 1px;
+	color: #8EA5A0;
+	padding-top: 79px;
+	padding-left: 120px;
+}
+.start__image {
+	display: flex;
+}
+
+.start__right {
+	padding-left: 80px;
+	padding-top: 208px;
+}
+.right {
+}
+.right__subtitle {
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #081158;
+	margin-bottom: 32px;
+}
+.right__title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 72px;
+	line-height: 79px;
+	color: #081158;
+	margin-bottom: 31px;
+}
+.right__description {
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	color: #081158;
+	margin-bottom: 25px;
+}
+.right__button {
+}
+.button {
+}
+.button__link {
+}
+.right__item {
+}
+.item {
+}
+
+#button__right {
+	background-image: url(../img/coaching.png);
+	width: 214px;
+	height: 62px;
+}
+
+/* @media (max-width: 1235px) {
+	.main__start {
+		flex-direction: row;
+	}
+	.start__right {
+		padding-top: 75px;
+	}
+	.start__left {
+		margin: 0px auto;
+	}
+	.start__right {
+		margin: 0px auto;
+	}
+} */
+
+/* @media (max-width: 780px) {
+	/* #button__right {
+		background-image: url(../img/coaching.png);
+		background-size: contain;
+		width: 214px;
+		height: 62px;
+	} */
+	/* .start__image {
+		width: 330px;
+		height: 350px;
+		margin: 0px auto;
+	}
+	.start__right {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 380px) {
+	.start__image {
+		width: 280px;
+		height: 300px;
+		margin: 0px auto;
+		margin-left: 0;
+	}
+	.start__right {
+		padding-left: 0;
+	}
+	.start__title {
+		padding-left: 0;
+	}
+	.right__title {
+		font-size: 52px;
+	}
+	.right__button {
+		padding-bottom: 15px;
+	}
+}  */
+
+@media (max-width: 990px) {
+	.main__start {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1235px) {
+	.main__start {
+		flex-direction: column;
+	}
+}
+
+/* ######################################################### */
+
+@media (max-width: 767px) {
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		margin: auto 0px;
+		position: relative;
+		z-index: 3;
+	}
+	.header__burger span {
+		position: absolute;
+		background: red;
+		position: absolute; 
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+	}
+	.header__burger:before, 
+	.header__burger:after {
+		content: "";
+		background-color: red;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+	.header__burger:before {
+		top: 0;
+	}
+	.header__burger:after {
+		bottom: 0;
+	}
+	.header__burger.active span {
+		transform: scale(0);
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: cornflowerblue;
+		padding-top: 65px;
+		transition: all;
+	}
+
+	.header__menu.active {
+		top: 0;
+	}
+
+	.menu__list {
+		display: block;
+	}
+	.menu__merge {
+		display: block;
+	}
+	.menu__list div {
+		margin: 40px 0px 20px 10px;
+	}
+	
+} 
+
+@media (max-width: 780px) {
+	.start__image {
+		width: 300px;
+		height: 300px;
+	}
+	.start__title {
+		padding-left: 0;
+	}
+	.main__start {
+		margin-left: 0;
+	}
+}
+
+/* ######################################################### */
+footer {
+	
+}
+
+.footer__container {
+	background: #081158;
+	display: flex;
+	flex-direction: row;
+	width: 1440px;
+	height: 579px;
+}
+.footer__logo {
+	margin: 100px 0px 449px 36px;
+}
+
+.footer__merge {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer__merge {
+}
+.footer__container {
+}
+.footer__logo {
+}
+.logo {
+}
+.logo__link {
+}
+.footer__contact {
+	padding-left: 503px;
+	padding-right: 396px;
+}
+.contact {
+}
+.contact__title {
+	display: block;
+	padding-top: 100px;
+	font-family: 'Red Hat Display', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.contact__mail {
+}
+.footer__licencing {
+}
+.licencing {
+}
+.licencing__title {
+	display: block;
+	padding-top: 100px;
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.licencing__menu {
+}
+.licencing__list {
+}
+.lecencing__item {
+}
+.licencing__link {
+}
+.footer__explore {
+}
